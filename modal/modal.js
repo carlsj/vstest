@@ -10,6 +10,11 @@ openModalBtn.addEventListener('click', () => {
     loginModal.style.display = 'block';
 });
 
+// '로그인' 버튼 클릭 시 모달 열기 - change_js_Event 브랜치변경
+openModalBtn.addEventListener('click', () => {
+    loginModal.style.display = 'line';
+});
+
 // 닫기 버튼 (x) 클릭 시 모달 닫기
 closeBtn.addEventListener('click', () => {
     loginModal.style.display = 'none';
