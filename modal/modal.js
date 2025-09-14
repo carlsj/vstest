@@ -10,6 +10,11 @@ openModalBtn.addEventListener('click', () => {
     loginModal.style.display = 'block';
 });
 
+// 마스터 브랜치에서수정 - master
+openModalBtn.addEventListener('click', () => {
+    loginModal.style.display = 'master';
+});
+
 // 닫기 버튼 (x) 클릭 시 모달 닫기
 closeBtn.addEventListener('click', () => {
     loginModal.style.display = 'none';
