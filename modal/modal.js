@@ -10,9 +10,9 @@ openModalBtn.addEventListener('click', () => {
     loginModal.style.display = 'master';
 });
 
-// 마스터 브랜치에서수정 - master
+// 마스터 브랜치에서수정 - remote 수정 외부저장소 반영
 openModalBtn.addEventListener('click', () => {
-    loginModal.style.display = 'master';
+    loginModal.style.display = 'outside';
 });
 
 // '로그인' 버튼 클릭 시 모달 열기 - change_js_Event 브랜치변경
