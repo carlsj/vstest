@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 모달</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="openModalBtn">로그인</button>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>로그인</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">아이디 또는 이메일</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn btn-submit">전송</button>
+                    <button type="button" class="btn btn-close">닫기</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

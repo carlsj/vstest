@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+  </script>
+
+
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand">JSShop</span>
+      <span class="badge bg-dark">Dark </span>
+      <button class="navbar-toggler"  type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div  class="black-bg">
+    <div  class="white-bg">
+      <h4 id="login">로그인하세요</h4>
+      <form action="sucess.html">
+        <div class="my-3">
+          <input type="text" class="form-control" id="email">
+        </div>
+        <div class="my-3">
+          <input type="password" class="form-control" id="password">
+        </div>
+        <button type="submit" class="btn btn-primary" id="send">전송</button>
+        <button type="button" class="btn btn-danger" id="close">닫기</button>
+      </form>
+    </div>
+  </div>
+
+  <ul class="list-group" >
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+  </ul>
+
+  <div  class="main-bg">
+    <h4>Shirt on Sale</h4>
+    <button id="login"  class="btn btn-danger">로그인</button>
+  </div>
+
+  <div  class="slide-container">
+    <div  class="slide-box">
+      <img src="" alt="">
+    </div>
+    <div  class="slide-box">
+      <img src="" alt="">
+    </div>
+    <div  class="slide-box">
+      <img src="" alt="">
+    </div>
+  </div>
+
+  <!-- <div  class="alert  alert-danger">
+    <span id="milisecond">5</span>초 이내 구매시 사은품 증정
+  </div>
+
+  <script>
+    const maxSecond = 5;
+    let   calledSecond = 0;
+    setInterval(function(){
+      document.getElementById('milisecond').innerHTML = maxSecond - calledSecond;
+      if (maxSecond - calledSecond === 0) {
+        $('.alert').hide();
+      } else {
+        $('.alert').show();
+      }
+      calledSecond += 1;
+      if (calledSecond > 6) {
+          calledSecond = 0;
+      }
+    },1000)
+    // setTimeout(function() {
+    //   $('.alert').hide();
+    // }, 5000)
+  </script>
+  <script>
+    var  count = 0;
+    $('.badge').on('click', function() {
+      count +=1;
+      // 홀수이면
+      if (count % 2 == 1) {
+          $('.badge').html('Dark');
+      } else {
+          $('.badge').html('Light');
+      }
+    });
+  </script> -->
+
+
+  <script>
+    const email_btn = document.getElementById('send');
+
+    console.log(" second called email_btn");
+
+    email_btn.addEventListener('click', function () {
+      console.log("document.getElementById('email').value" + document.getElementById('email').value);
+      if (document.getElementById('email').value == '') {
+        alert('아이디 입력 안함');
+      }
+    });
+
+  </script>
+  <script>
+    $('#login').on('click', function() {
+      document.querySelector('.black-bg')[0].classList.add('show-modal')
+    });
+  </script>
+
+  <script>
+      document.getElementsByClassName('navbar-toggler')[0].addEventListener('click', 
+      function(){
+      document.getElementsByClassName('list-group')[0].classList.toggle('show');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+  </script>   
+
+</body>
+</html>
