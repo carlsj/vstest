@@ -45,6 +45,7 @@ loginForm.addEventListener('submit', (event) => {
         
         // 폼 초기화
         loginForm.reset();
+        alert('아이디와 비밀번호를 모두 입력해주세요.');
     } else {
         alert('아이디와 비밀번호를 모두 입력해주세요.');
     }
