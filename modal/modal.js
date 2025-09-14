@@ -5,9 +5,9 @@ const closeBtn = document.querySelector('.close-btn');
 const closeBtnInModal = document.querySelector('.btn-close');
 const loginForm = document.getElementById('loginForm');
 
-// '로그인' 버튼 클릭 시 모달 열기
+// '로그인' 버튼 클릭 시 모달 열기 - master
 openModalBtn.addEventListener('click', () => {
-    loginModal.style.display = 'block';
+    loginModal.style.display = 'master';
 });
 
 // 마스터 브랜치에서수정 - master
