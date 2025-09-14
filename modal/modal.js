@@ -42,10 +42,12 @@ loginForm.addEventListener('submit', (event) => {
 
         // 로그인 성공 시 모달 닫기
         loginModal.style.display = 'none';
+
+        //중복문장-깃테스트
+        loginModal.style.display = 'none';
         
         // 폼 초기화
         loginForm.reset();
-        alert('아이디와 비밀번호를 모두 입력해주세요.');
     } else {
         alert('아이디와 비밀번호를 모두 입력해주세요.');
     }
